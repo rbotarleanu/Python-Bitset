@@ -40,21 +40,21 @@ class BitSet:
         self.__bits = [self.__ALL_CLEAR
                        for _ in range(self.__idx_of_idxs_needed(n_bits))]
 
-    def __idx_of_idxs_needed(self, n_bits):
+    def __number_of_integers_needed(self, n_bits):
         """
-        Computes the idx of idxs required to store n_bits.
+        Computes the number of integers required to store n_bits.
 
         Parameters
         ----------
         n_bits: int
-            the idx of bits to be stored.
+            the number of bits to be stored.
         """
 
         return int(ceil(n_bits / self.__INT_SIZE))
 
     def __index_bit_in_bitset(self, position):
         """
-        Computes the idx in the bitset array that holds the *position* bit.
+        Computes the index in the bitset array that holds the *position* bit.
 
         Parameters
         ----------
@@ -239,6 +239,3 @@ class BitSet:
             s += self.__int_to_bitstring(i)
 
         return s
-
-
-if __name__ == '__main__':
