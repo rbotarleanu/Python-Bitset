@@ -3,7 +3,7 @@
 
 <!-- code_chunk_output -->
 
-- [Python-Bitmap](#python-bitmap)
+- [Python-BitSet](#python-bitset)
   - [Description](#description)
   - [Methods](#methods)
       - [BitSet(n_bits)](#bitsetn_bits)
@@ -15,7 +15,7 @@
 
 <!-- /code_chunk_output -->
 
-# Python-Bitmap
+# Python-BitSet
 
 ## Description
 Lightweight implementation of a C++ like "bitset" class, which provides a
